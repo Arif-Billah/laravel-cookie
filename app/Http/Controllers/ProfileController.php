@@ -18,14 +18,14 @@ class ProfileController extends Controller
             "age"=> $age
             
          ];
-    $name = 'access_token1';
+    $name = 'access_token';
     $value = '123_xyz';
     $currentTimeDhaka = Carbon::now('Asia/Dhaka');
     $minutes =5; // Duration in minutes
     $path = '/';
-    $domain = $_SERVER['SERVER_NAME']; // Retrieve the server name dynamically
-    $secure = false; // If true, the cookie will only be sent over HTTPS
-    $httpOnly = true; // If true, the cookie will be accessible only through the HTTP protocol
+    $domain = $_SERVER['SERVER_NAME']; 
+    $secure = false; 
+    $httpOnly = true;
 
     $currentTimeDhaka = Carbon::now('Asia/Dhaka');
     $expirationTimeDhaka = $currentTimeDhaka->copy()->addMinutes($minutes);
